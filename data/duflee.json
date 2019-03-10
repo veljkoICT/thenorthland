@@ -1,0 +1,84 @@
+[
+    {
+        "id" : 7,
+        "naziv" : "DUFLEE BAG ARMY GREEN",
+        "slika" : {
+            "src" : "images/Bags/torbe/zelenoVojnicka.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 8,
+        "naziv" : "DUFLEE BAG ARMY GREY",
+        "slika" : {
+            "src" : "images/Bags/torbe/sivoVojnicka.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 9,
+        "naziv" : "DUFLEE BAG GREY",
+        "slika" : {
+            "src" : "images/Bags/torbe/siva.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }, {
+        "id" : 10,
+        "naziv" : "DUFLEE BAG RED",
+        "slika" : {
+            "src" : "images/Bags/torbe/crvena.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }, {
+        "id" : 11,
+        "naziv" : "DUFLEE BAG YELLOW",
+        "slika" : {
+            "src" : "images/Bags/torbe/krem.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 12,
+        "naziv" : "DUFLEE BAG BLUE",
+        "slika" : {
+            "src" : "images/Bags/torbe/plava.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 4,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }
+]

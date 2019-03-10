@@ -1,0 +1,84 @@
+[
+    {
+        "id" : 13,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak1.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 14,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak2.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 15,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak3.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }, {
+        "id" : 16,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak4.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }, {
+        "id" : 17,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak5.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    },
+    {
+        "id" : 18,
+        "naziv" : "TEHNICAL PACKS",
+        "slika" : {
+            "src" : "images/Bags/ruksak/ruksak6.jpg",
+            "alt" : "CANVAS BACKPACK" 
+        },
+        "cena" : {
+            "stara" : "95.00",
+            "nova" : "85.50"
+        },
+        "idVrsta" : 3,
+        "opis" : "I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty."
+    }
+]

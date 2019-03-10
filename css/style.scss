@@ -1,0 +1,1901 @@
+*{
+    padding: 0px;
+    margin : 0px;
+    box-sizing: border-box;
+}
+
+$laptop : 1366px;
+$large-tablet : 1000px;
+$tablet : 768px;
+$phone : 600px;
+$phone2 : 460px;
+$phone3 : 360px;
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+@mixin large-tablet {
+    @media (max-width: #{$large-tablet}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin phone {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
+}
+@mixin phone2 {
+    @media (max-width: #{$phone2}) {
+        @content;
+    }
+}
+@mixin phone3 {
+    @media (max-width: #{$phone3}) {
+        @content;
+    }
+}
+.popT{
+    width: 200px;
+    height: 40px;
+    background-color: yellowgreen;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    left: 43%;
+    top: 45%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    display: none;
+}
+.cleaner{
+    clear: both;
+}
+::-webkit-scrollbar {
+    background-color: rgb(15, 15, 15);
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #00000070;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(125deg, #c2c2c2, #c2c2c2);
+    border-radius: 10px;
+}
+
+.header-media, .header-media2{
+    width: 6%;
+    height: auto;
+    background-color: rgba(15, 15, 15,0.75);
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin-top: 60px;
+    margin-left: 94%;
+    position: fixed;
+    @include phone{
+       display: none;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+            a{
+                color: #ffffff;
+            }
+        }
+    }
+}
+.header-media2{
+    top:27%;
+}
+#main{
+    width : 100%;
+    height: auto;
+    background-color: #000000; 
+    #header, #header2{
+        width : 100%;
+        height: 680px;
+        background-image: url(../images/Cover/cover.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @include laptop{
+            height : 550px;
+        }
+        @include large-tablet{
+            height : 430px;
+        }
+        @include tablet{
+            height : 330px;
+        }@include phone{
+            height : 250px;
+        }
+        @include phone2{
+            height : 200px;
+        }
+        @include phone3{
+            height : 150px;
+        }
+        #nav{
+            width: 100%;
+            height: 95px;
+            background-color: rgba(15, 15, 15,0.75);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 140;
+            @include large-tablet(){
+                height: 75px;
+            }
+            @include tablet(){
+                height: 65px;
+            }
+            @include phone{
+                height: 55px;
+            }
+            @include phone2{
+                height: 45px;
+            }
+            .nav-logo{
+                width: 30%;
+                height: 80%;
+                margin-top: 10px;
+                .center-logo{
+                    width: 70%;
+                    margin: 8px auto;
+                    cursor: pointer;
+                    @include large-tablet(){
+                        margin: 8px auto;
+                    }
+                    @include tablet(){
+                        margin: 0px auto;
+                    }
+                    @include phone{
+                        margin: 0px auto;
+                    }
+
+                    @include phone2{
+                        margin: 0px auto;
+                    }
+                    a{
+                        text-decoration: none;
+                        
+                        .logo1{
+                            color: #c2c2c2;
+                            font-size: 40px;
+                            font-family: 'Anton', sans-serif;
+                            margin-right: 1px;
+                        }
+                        .logo2{
+                            color: #ffffff;
+                            font-size: 40px;
+                            font-family: 'Anton', sans-serif;
+                        }
+                        .logo1,.logo2{
+                            @include large-tablet(){
+                                font-size: 30px;
+                            }
+                            @include tablet(){
+                                font-size: 27px;
+                            }
+                            @include phone{
+                                font-size: 23px;
+                            }
+                            @include phone2{
+                                font-size: 20px;
+                            }
+                        }
+                    }    
+                }
+            }
+            .nav-list{
+                width: 50%;
+                height: 80%;
+                margin-top: 10px;
+                //margin-right: 5%;
+                @include tablet{
+                    margin-top: 1px;
+                }
+                .bulet{
+                    font-size: 30px;
+                    color: #ffffff;
+                    text-align: right;
+                    display: none;
+                    margin-right: 5%;
+                    margin-bottom: 4%;
+                    @include tablet{
+                        display: block;
+                    }
+                    @include phone(){
+                        font-size: 20px;
+                    }
+                }
+                .close{
+                    font-size: 30px;
+                    color: #ffffff;
+                    text-align: right;
+                    display: none;
+                    margin-right: 5%;
+                    margin-bottom: 4%;
+                    
+                    @include phone(){
+                        font-size: 20px;
+                    }
+                }
+                
+                .navigacijaResponsive{
+                    width: 50%;
+                    height: 100%;
+                    position: fixed; 
+                    float: right;
+                    z-index: 4000;
+                    display: none;
+                    background-color: #ffffff;
+                    ul{
+                        
+                        list-style-type: none;
+                        .line{
+                            display: flex;
+                            span{
+                                padding-top: 18px;
+                                margin-left: 20px;
+                                font-size: 30px;
+                                cursor: pointer;
+                               // font-style : oblique;  
+                            }
+                        }
+                        li{
+                            margin: 15px;
+                            a{
+                                text-decoration: none;
+                                color: #000000;
+                                font-family: 'Anton', sans-serif;
+                                font-size: 22px;
+                            }
+                            .strela{
+                                margin-left: 25%;
+                            }
+                        }
+                    }
+                }
+                .list{
+                    display: flex;
+                    justify-content: space-around;
+                    list-style-type: none;
+                    
+                    
+                    li{  
+                        margin-top: 20px;  
+                        a{
+                            text-decoration: none;
+                            color:#c2c2c2;
+                            font-family: 'Anton', sans-serif;
+                            font-size: 22px;
+                            letter-spacing: 1px;
+                            transform: 0.3s;
+                            @include tablet{
+                                display: none;
+                            }
+                        }
+                        a:hover{
+                            color: #ffffff;
+                        }
+                    } 
+                    .hide{  
+                        ul{
+                            background-color:rgba(15, 15, 15,0.75);
+                            text-align: center;
+                            padding: 15px;
+                            position: absolute;
+                            right:38%;
+                            li
+                            {
+                                list-style-type: none;
+                            }
+                        }                        
+                    }   
+                }
+            }
+        }
+        .header-txt{
+            width: 70%;
+            height: 200px;
+            margin: 0px auto;
+            position: relative;
+            top: 40%;
+            @include laptop{
+                top:33%;
+            }
+            @include large-tablet{
+                top:30%;
+            }
+            @include tablet{
+                top: 35%;
+            }@include phone{
+                top: 40%;
+            }
+            @include phone2{
+                top: 40%;
+            }
+            @include phone3{
+                top: 40%;
+            }
+            .header-h1{
+                width: 98%;
+                height: auto;
+                margin: 0px auto;
+                h1{
+                    color: #ffff;
+                    font-size: 70px;
+                    font-family: 'Cairo', sans-serif;
+                    width: 99%;
+                    margin: 20px aut0;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    @include laptop{
+                        font-size: 50px;
+                    }
+                    @include large-tablet{
+                        font-size:40px;
+                    }
+                    @include tablet{
+                        font-size: 30px;
+                    }
+                    @include phone{
+                        font-size: 20px;
+                    }
+                    @include phone2{
+                        font-size: 15px;
+                    }
+                    @include phone3{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .shop-txt{
+                width: 20%;
+                height: auto;
+                padding-top: 15px;
+                color: #ffff;
+                margin: 3% auto;
+                text-align: center;
+                font-family: 'Cairo', sans-serif;
+                h2{
+                    font-size: 30px;
+                    @include laptop{
+                        font-size: 20px;
+                    }
+                    @include large-tablet(){
+                        font-size:15px;
+                    }
+                    @include phone{
+                        font-size: 10px;
+                    }
+                    @include phone2{
+                        font-size: 8px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    p{
+                        font-size: 80px;
+                        @include laptop{
+                            font-size: 50px;
+                        }
+                        @include laptop{
+                            font-size: 40px;
+                        }
+                        i{
+                            text-decoration: none;
+                            color: #ffff;
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    #header2{
+        background-image: none;
+        height: auto;
+        background-color: #000000;
+    }
+    #gallery{
+        width:80%;
+        height: auto;
+        margin: 0px auto;
+        padding-top: 200px;
+        text-align: center;
+        color: #ffffff;
+        @include laptop(){
+
+        }
+        h2{
+            margin-bottom: 100px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 40px;
+            letter-spacing: 5px;
+            @include laptop(){
+                font-size: 30px;
+            }
+            @include large-tablet(){
+                font-size: 27px;
+            }
+            @include tablet(){
+                font-size: 22px;
+            }
+            @include phone(){
+                font-size: 20px;
+            }
+        }
+        .gallery-center{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px auto;
+           z-index: 0;
+           @include laptop(){
+            height: 80%;
+
+            }
+            @include large-tablet(){
+                height: 80%;
+    
+            }
+            @include tablet(){
+                height: 60%;
+    
+                }
+            @include phone(){
+                height: 50%;
+    
+            }
+            .block{        
+                width: 30%;
+                height: auto;
+                padding-bottom: 20px;
+                transform: 2s;
+                
+                a{
+                    outline: none;
+                    text-decoration: none;
+                    img{
+                        width:70%;
+                        margin: 0px auto;
+                        z-index: 0;
+                    }
+                    .bag-txt{
+                        width: 90%;
+                        height: 50px;
+                        margin: 30px auto;
+                        text-align: center;
+                        font-family: 'Anton', sans-serif;
+                        transition: 0.5s;
+                        @include large-tablet(){
+                            height: 25px;
+                        }
+                        
+                        p{
+                            color: #ffffff;
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            letter-spacing: 1.3px;
+                            @include laptop(){
+                                font-size: 30px;
+                            }
+                            @include large-tablet(){
+                                font-size: 27px;
+                            }
+                            @include tablet(){
+                                font-size: 24px;
+                            }
+                            @include phone(){
+                                font-size: 15px;
+                            }
+                            @include phone2(){
+                                font-size: 12px;
+                            }
+                            @include phone3(){
+                                font-size: 10px;
+                            }
+                        }
+                        .bag-oldPrice{
+                            color: #ffffff;
+                            margin-right: 15%;
+                            text-decoration:line-through;
+                            @include tablet(){
+                                font-size: 11px;
+                            }
+                            @include phone(){
+                                font-size: 10px;
+                            }
+                            @include phone2(){
+                                font-size: 9px;
+                            }
+                            @include phone3(){
+                                font-size: 8px;
+                            }
+                        }
+                        .bag-price{
+                            color: #ffffff;
+                            @include tablet(){
+                                font-size: 11px;
+                            }
+                            @include phone(){
+                                font-size: 10px;
+                            }
+                            @include phone2(){
+                                font-size: 9px;
+                            }
+                            @include phone3(){
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                    .bag-show{
+                        width: 80%;
+                        height: auto;
+                        margin: 0px auto;
+                        text-align: center;
+                        color: #ffffff;
+                        font-family: 'Anton', sans-serif;
+                        font-size: 35px;
+                        margin-top: 30px;
+                        border: 1px solid #c2c2c2;
+                        cursor: pointer;
+                        @include laptop(){
+                            font-size: 30px;
+                        }
+                        @include large-tablet(){
+                            font-size: 27px;
+                        }
+                        @include tablet(){
+                            font-size: 24px;
+                        }
+                        @include phone(){
+                            font-size: 15px;
+                        }
+                        @include phone2(){
+                            font-size: 12px;
+                        }
+                        @include phone3(){
+                            font-size: 10px;
+                        }
+                    }
+                 }
+                
+            }
+        }
+    }
+    #row2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        
+        .row2-txt{
+            width: 50%;
+            background-color: #000000;
+            @include tablet{
+                width: 100%;
+            }
+            .row2-txtCenter{
+                width: 90%;
+                height: auto;
+                margin: 35% auto;
+                .row2-p1, .row2-p2{
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 60px;
+                    font-family: 'Cairo', sans-serif;
+                    @include large-tablet{
+                        font-size: 40px;
+                    }
+                    @include phone2{
+                        font-size: 30px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    .row2-p2{
+                        font-size: 25px;
+                        margin-top: 15px;
+                    }
+                }   
+            }
+        }
+        .row2-img{
+            width: 50%;
+            background-image: url("../images/Cover/bag.jpg");
+            background-size: cover; 
+            background-position: 20%;
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+    #row3{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        @include tablet{
+            height: 300px;
+        }
+        @include phone{
+            flex-direction: column;
+            height: auto;
+        }
+        .row3-img1, .row3-img2, .row3-img3{
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 40px;
+                text-align: center;
+                font-family: 'Cairo', sans-serif;
+                @include tablet{
+                    font-size: 25px;
+                }
+                .back{
+                    p{
+                    padding-top: 50%;
+                    display: none;
+                    transition: 0.5s;
+                    @include phone{
+                        padding-top: 30%;
+                    }
+                    @include phone2{
+                        padding-top: 40%;
+                    }
+                    @include phone3{
+                        padding-top: 50%;
+                    }
+                    }
+                }
+            }
+            width: 33.3%;
+            height: 100%;
+            background-image: url("../images/Cover/man1.jpg");
+            background-size: cover;
+            background-position: 50%;
+            transform: 0.3s;
+            @include phone{
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        .row3-img1:hover, .row3-img2:hover, .row3-img3:hover{
+            .back{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(15, 15, 15,0.55);
+                p{
+                    display: block;
+                }
+            }
+        }
+        .row3-img2{background-image: url("../images/Cover/man2.jpg");}
+        .row3-img3{background-image: url("../images/Cover/man3.jpg");}
+    }
+    #row4{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        padding-bottom: 3%;
+        .row4-data{
+            width: 70%;
+            height: 100%;
+            margin: 0px auto;
+            .row4-title{
+                width: 50%;
+                height: auto;
+                padding-top: 50px;
+                margin: 0px auto;
+                font-family: 'Cairo', sans-serif;
+                text-align: center;
+                @include tablet(){
+                    padding-top: 30px;
+                }
+                @include phone(){
+                    padding-top: 20px;
+                }
+                @include phone2(){
+                    padding-top: 15px;
+                }
+                @include phone3(){
+                    padding-top: 10px;
+                }
+                h3{
+                    color: #ffffff;
+                    font-size: 40px;
+                    @include tablet(){
+                       
+                        font-size: 30px;
+                    }
+                    @include phone{
+                       
+                        font-size: 25px;
+                    }
+                    @include phone2{
+                       
+                        font-size: 23px;
+                    }
+                    @include phone3{
+                       
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    color: #ffffff;
+                    font-size: 22px;
+                    @include tablet(){
+                       
+                        font-size: 18px;
+                    }
+                    @include phone{
+                       
+                        font-size: 16px;
+                    }
+                    @include phone2{
+                       
+                        font-size: 14px;
+                    }
+                    @include phone3{
+                       
+                        font-size: 12px;
+                    }
+                }
+            }
+            .row4-bags{
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin-top: 8%;
+                @include phone(){
+                    display: block;
+                }
+                    .bag1{
+                        width: 33%;
+                        height: auto;
+                        padding-bottom: 20px;
+                        transform: 2s;
+                        @include phone(){
+                            width: 100%;
+                            margin: 0px auto;
+                        }
+                        a{
+                            text-decoration: none;
+                            
+                            img{
+                                width: 100%;
+                                @include phone(){
+                                    width: 60%;
+                                    margin: 0px auto;
+                                    display: flex;
+                                }
+                            }
+                            .bag-txt{
+                                width: 90%;
+                                height: auto;
+                                margin: 30px auto;
+                                text-align: center;
+                                font-family: 'Anton', sans-serif;
+                                transition: 0.5s;
+                                padding: 1px;
+                                @include phone(){
+                                    margin: 10px auto;
+                                }
+                                p{
+                                    color: #ffffff;
+                                    font-size: 30px;
+                                    margin-bottom: 10px;
+                                    letter-spacing: 1.3px;
+                                    @include laptop(){
+                                        font-size: 25px;
+                                    }
+                                    @include large-tablet(){
+                                        font-size: 20px;
+                                    }
+                                    @include tablet(){
+                                        font-size: 17px;
+                                    }
+                                    @include phone(){
+                                        font-size: 15px;
+                                    }
+                                    @include phone2(){
+                                        font-size: 13px;
+                                    }
+                                    @include phone3(){
+                                        font-size: 11px;
+                                    }
+                                }
+                                .bag-oldPrice{
+                                    color: #ffffff;margin-right: 15%;
+                                    text-decoration:line-through;
+                                }
+                                .bag-price{
+                                    color: #ffffff;
+                                }
+                            }
+                            .bag-show{
+                                width: 100%;
+                                height: auto;
+                                text-align: center;
+                                color: #ffffff;
+                                font-family: 'Anton', sans-serif;
+                                font-size: 35px;
+                                margin-top: 30px;
+                                border: 1px solid #c2c2c2;
+                                cursor: pointer;
+                                @include tablet(){
+                                    width: 70%;
+                                    margin: 0px auto;
+                                    font-size: 20px;
+                                }
+                                @include phone(){
+                                    width: 60%;
+                                    margin: 0px auto;
+                                    font-size: 20px;
+                                }
+                            }
+                         }
+                    }
+            }
+        }
+    }
+    #row5{
+        width: 100%;
+        height: auto;
+        background-image: url("../images/Cover/man4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include laptop(){
+            background-position-x: +30%;
+        }
+        @include large-tablet(){
+            background-position-x: +40%;
+        }
+        .row5-black{
+            width: 50%;
+            height: 500px;
+            @include large-tablet(){
+                height: 400px;
+            }
+            @include tablet(){
+                height: 300px;
+            }
+            @include phone(){
+                width: 100%;
+                height: 250px;
+            }
+            background-color: rgba(15, 15, 15,0.55);
+            .row5-txtCenter{
+                width: 60%;
+                height: 50%;
+                margin:0px auto;
+                padding-top: 25%;
+                font-family: 'Popins', sans-serif;
+                @include large-tablet(){
+                    padding-top: 13%;
+                }
+                @include tablet(){
+                    padding-top: 20%;
+                }
+                @include phone(){
+                    padding-top: 14%;
+                }
+
+                @include phone2(){
+                    padding-top: 14%;
+                }
+
+                @include phone3(){
+                    padding-top: 14%;
+                }
+                h3{
+                    color: #ffffff;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                    margin-left: 5%;
+                    @include large-tablet(){
+                        font-size: 30px;
+                    }
+                    @include tablet(){
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    color: #ffffff;
+                    font-size: 20px;
+                    @include large-tablet(){
+                        font-size: 18px;
+                    }
+                    @include large-tablet(){
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    #row6{
+        width: 100%;
+        min-height: 450px;
+       
+        background-color: #000000;
+        padding-bottom: 20px;
+        .row6-center{
+            width: 70%;
+            height: auto;
+            margin: 0px auto;
+            display: flex;
+            @include tablet(){
+                display: block;
+            }
+            @include phone(){
+                width: 100%;
+            }
+            .form{
+                width: 50%;
+                height: 100%;
+                //background-color: blue;
+                @include tablet(){
+                    width: 100%;
+                }
+                @include phone(){
+                    width: 100%;
+                }
+                .form-center{
+                    width: 80%;
+                    height: auto;
+                    margin: 0px auto;
+                    padding-top: 50px;
+                    padding-bottom: 2%;
+                    @include tablet(){
+                        width: 100%;
+                    }
+                    @include phone(){
+                        width: 100%;
+                    }
+                    .divInput{
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        margin: 20px;
+                        //background-color: blue;
+                        @include tablet(){
+                            width: 100%;
+                        }
+                        @include phone(){
+                            height: 20px;
+                            width: 90%;
+                            display: flex;
+                            //margin: 0px auto;
+                        }
+                        
+                        .input{
+                            width: 85%;
+                            margin: 0px auto;
+                            input.placeholderred::-webkit-input-placeholder {
+                                color: red;
+                             }
+                            #tbxName, #tbxMail, #tbxSub, #message{
+                                max-width:90%;
+                                min-width:100%;
+                                height: 40px;
+                                background-color: rgba(56, 56, 56, 0.55);
+                                color:  grey;
+                                font-size: 22px;
+                                font-family: 'Popins', sans-serif;
+                                margin: 0px auto;
+                                margin-left: 10px;
+                                border: none;
+                                padding: 10px;
+                                @include phone(){
+                                    margin: 0px auto;
+                                    font-size: 12px;
+                                    height: 25px;
+                                    margin-left: 0px;
+                                }
+                            }
+                            #tbxName:hover, #tbxMail:hover, #tbxSub:hover, #message:hover{
+                                background-color:  rgba(104, 103, 103, 0.55);
+                            }
+                            
+                            #message{
+                                width: 70%;
+                                resize: both;
+                                height: 100px;
+                                // margin: 15px auto;
+                            }
+                        }
+                        
+                        #dugmeF{
+                            width: 150px;
+                            height: 40px;
+                            border:2px solid #ffffff;
+                            text-align: center;
+                            color: #ffffff;
+                            background-color: #000000;
+                            float: right;
+                            font-family: 'Popins', sans-serif;
+                            font-size: 22px;
+                            margin-top: 60px;
+                            transition: 0.3s;
+                            margin-left: 60%;
+                            margin: 60px auto;
+                            outline: none;
+                            @include phone(){
+                                font-size: 18px;
+                                height: 25px;
+                                border:1px solid #ffffff;
+                                margin-top: 70px;
+                            }
+                        }
+                        #dugmeF:hover{
+                            border:2px solid grey;
+                            color: grey;
+                            border:1px solid grey;
+                        }
+                    }
+                }
+            }
+            .form-txt{
+                width: 50%;
+                height: 100%;
+                // background-color: red;
+                font-family: 'Popins', sans-serif;
+                color: #ffffff;
+                font-size:22px;
+                text-align: left;
+                padding-top: 50px;
+                padding-left: 50px;
+
+                @include laptop(){
+                    font-size:20px;
+                    text-align: center;
+                }
+                @include tablet(){
+                    width: 100%;
+                    text-align: center;
+                    padding-left: 0px;
+                }
+               
+                @include phone(){
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .title{
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                    @include laptop(){
+                        font-size: 40px;
+                    }
+                    @include tablet(){
+                        margin-top: 30px;
+                        text-align: center;
+                    }
+                    @include phone(){
+                        font-size: 22px;
+                        
+                    }
+                }
+                .con{
+                    width: 70%;
+                    margin-bottom: 30px;
+                    @include laptop(){
+                        font-size: 18px;
+                    }
+                    @include tablet(){
+                        margin: 0px auto;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    @include phone(){
+                        margin: 0px auto;
+                        font-size: 12px;
+                        
+                    }
+                }
+                .inf{
+                    font-size: 19px;
+                    @include laptop(){
+                        font-size: 18px;
+                    }
+                    @include tablet(){
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    @include phone(){
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                    
+                }
+            }
+        }      
+    }
+    #data{
+        width: 100%;
+        height: auto;
+        background-color: #000000;
+        padding-top: 100px;
+        #center-data{
+            width: 80%;
+            height: auto;
+            margin: 0px auto;
+            padding-top: 3%;
+            .data-title{
+                width: 80%;
+                height: auto;
+                margin: 0px auto;
+                .filterSort{
+                    width: 100%;
+                    height: 50px;
+                    //background-color: red;
+                    margin-bottom: 50px;
+                    display: flex;
+                    @include tablet(){
+                        display: block;
+                    }
+                    .searchBox{
+                        width: 40%;
+                        height: 100%;
+                        //float: left;
+                        //background-color: blue;
+                        display: flex;
+                        @include tablet(){
+                            width: 100%;
+                        }
+                        span{
+                            width: 15%;
+                            padding: 9px;
+                            border-bottom: 2px solid #ffffff;
+                            font-size: 30px;
+                            color: #ffffff;
+                            background-color: #000000;
+                            @include tablet(){
+                                font-size: 10px;
+                                padding: 19px;
+                            }
+                        }
+                        input{
+                            width: 85%;
+                            border: none;
+                            background-color: #000000;
+                            height: 100%;
+                            border-bottom: 2px solid #ffffff;
+                            font-size: 24px;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            @include tablet(){
+                                font-size: 17px;
+                                height: 50px;
+                            }
+                            &::placeholder{
+                                color: #ffffff;
+                                text-transform: uppercase;
+                            }
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        
+                    }
+                    .sort{
+                        width: 60%;
+                        height: 50px;
+                        //display: flex;
+                        @include tablet(){
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        
+                        #sort,#filter{
+                            width: 120px;
+                            height: 50px;
+                            border: none;
+                            outline: none;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            float: right;
+                            border-bottom: 2px solid white;
+                            color: #ffff;
+                            background-color: #000000;
+                            @include tablet(){
+                                float: left;
+                               height: 25px;
+                               font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    color: #ffff;
+                    font-size: 40px;
+                    font-family: 'Anton', sans-serif;
+                    text-align: center;
+                    letter-spacing: 5px;
+                    @include tablet(){
+                        margin-top: 90px;
+                        font-size: 25px;
+                    }
+                    @include phone(){
+                        margin-top: 120px;
+                        font-size: 20px;
+                    }
+                }
+                .artikli{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin-top: 1%;
+                    padding-bottom: 50px;
+                        .bag1{
+                            width: 33.1%;
+                            height: auto;
+                            padding-bottom: 20px;
+                            transform: 0.3s;
+                            margin-top: 25px;
+                            @include tablet(){
+                                width: 45%;  
+                            }
+                            @include phone(){
+                                width: 100%;  
+                            }
+                            a{
+                                text-decoration: none;
+                                img{
+                                    width: 100%;
+                                    @include phone(){
+                                        width: 50%;  
+                                        min-height: 50%;
+                                        display: flex;
+                                        margin: 0px auto;
+                                    }
+                                }
+                                .bag-txt{
+                                    width: 90%;
+                                    height: auto;
+                                    margin: 30px auto;
+                                    text-align: center;
+                                    font-family: 'Anton', sans-serif;
+                                    transition: 0.3s;
+                                    
+                                    
+                                    p{
+                                        color: #ffffff;
+                                        font-size: 30px;
+                                        margin-bottom: 10px;
+                                        letter-spacing: 1.3px;
+                                        @include large-tablet(){
+                                            font-size: 25px;
+                                        }
+                                        @include tablet(){
+                                            font-size: 20px;
+                                        }
+                                    }
+                                    .bag-oldPrice{
+                                        color: #ffffff;margin-right: 15%;
+                                        text-decoration:line-through;
+                                        @include large-tablet(){
+                                            font-size: 20px;
+                                        }
+                                        @include tablet(){
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    .bag-price{
+                                        color: #ffffff;
+                                        @include large-tablet(){
+                                            font-size: 20px;
+                                        }
+                                        @include tablet(){
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                .bag-show{
+                                    width: 100%;
+                                    height: auto;
+                                    text-align: center;
+                                    color: #ffffff;
+                                    font-family: 'Anton', sans-serif;
+                                    font-size: 35px;
+                                    margin-top: 30px;
+                                    cursor: pointer;
+                                    border: 1px solid #c2c2c2;
+                                    @include large-tablet(){
+                                        font-size: 22px;
+                                    }
+                                    @include tablet(){
+                                        font-size: 15px;
+                                    }
+                                    @include phone(){
+                                        font-size: 15px;
+                                        width: 60%;
+                                        margin: 0px auto;
+                                    }
+                                }
+                             }
+                        }
+                }
+            }
+        }
+    }
+    .futer{
+        width: 100%;
+        height: 400px;
+        background-color: #1a1919;
+        background-color: #141414;
+        @include tablet(){
+           
+            height: auto;
+        }
+        .futer-top{
+            width: 100%;
+            height: 80%;
+            
+            .top-center{
+                width: 70%;
+                height: auto;
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 30px;
+                @include large-tablet(){
+                    width: 90%;
+
+                }
+                @include tablet(){
+                    width: 90%;
+                    display: block;
+                    height: auto;
+                }
+                .center-logo{
+                    width: 70%;
+                    margin: 8px auto;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        .logo1{
+                            color: #c2c2c2;
+                            font-size: 40px;
+                            font-family: 'Anton', sans-serif;
+                            margin-right: 1px;
+                            @include large-tablet(){
+                                font-size: 40px;
+                            }
+                            @include tablet(){
+                                font-size: 20px;
+                            }
+                        }
+                        .logo2{
+                            color: #ffffff;
+                            font-size: 40px;
+                            font-family: 'Anton', sans-serif;
+                            @include large-tablet(){
+                                font-size: 40px;
+                            }
+                            @include tablet(){
+                                font-size: 20px;
+                            }
+                        }
+                    }    
+                }
+                .top-about, .top-nav, .top-products{
+                    width: 33.3%;
+                    height: 100%;
+                    text-align: center;
+                    @include tablet(){
+                        width: 50% !important;
+                        margin: 0px auto;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                    }
+                    ul{
+                        list-style-type: none;
+                        li{
+                            margin: 10px;
+                            color: #ffffff;
+                            font-size: 15px;
+                            font-family: 'Popins', sans-serif;
+                            @include large-tablet(){
+                                font-size: 12px;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: #ffffff;
+                                font-size: 18px;
+                                font-family: 'Popins', sans-serif;
+                                @include large-tablet(){
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                } 
+                .top-products{
+                    margin-top: 66px;
+                    @include tablet(){
+                        width: 50% !important;
+                        margin: 0px auto;
+                    }
+                    .topProductsUl2{
+                        margin-top: 30px;
+                    }
+                }
+                .top-nav{
+                    margin-top: 66px;
+                    @include tablet(){
+                        width: 50% !important;
+                        margin: 0px auto;
+                    }
+                }
+            }
+        }
+        .futer-bottom{
+            width: 100%;
+            height: 20%;
+            background-color: #141414;
+            background-color: #1a1919;
+            .bottom-center{
+                width: 70%;
+                height: 100%;
+                margin: 0px auto;
+                text-align: center;
+                color: #ffffff;
+                font-family: 'Popins', sans-serif;
+                padding-top: 28px;
+                @include tablet(){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+/*OVDE IDE CHECKBOX*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ffffff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5.5px;
+    top: 2.5px;
+    width: 5px;
+    height: 10px;
+    border: solid goldenrod;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .x2{
+      color: #ffffff;
+      font-family: 'Popins', sans-serif;
+      font-size: 15px;
+      padding-bottom: 2px;
+      //margin-bottom: 3px;
+      
+  }
+/*KRAJ*/
+.popUp{
+    width: 55%;
+    height: 70%;
+    position: absolute;
+    background-color: #000000;
+    top: 15%;
+    left: 20.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid #ffffff;
+    position: fixed;
+    z-index: 161;
+    @include laptop(){
+        height: auto;
+    }
+    @include phone(){
+        display: block;
+    }
+    .popX{
+        position: absolute;
+        left: 96%;
+        top: 2%;
+        color: #ffffff;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        @include tablet(){
+            font-size: 10px;
+        }
+        @include phone(){
+            left: 90%;
+         }
+         @include phone2(){
+            left: 90%;
+          }
+    }
+    .popX:hover{
+        color: #c2c2c2;
+    }
+    .img-pop{
+        width: 50%;
+        height: 300px;
+        @include phone(){
+            width: 100%;
+            height: 100px;
+            align-items: center;
+        }
+        img{
+            display: flex;
+            height: 100%;
+            @include tablet(){
+                height: 60%;
+            }
+            @include phone(){
+               height: 100%;
+               width: 70%;
+               margin: 0px auto;
+            }
+            @include phone2(){
+                width: 100%;
+             }
+        }
+        
+    }
+    .txt-pop{
+        width: 50%;
+        height: 100%;
+        color: #ffffff;
+        font-family: 'Anton', sans-serif;
+        margin-top: 3%;
+        @include phone(){
+            width: 100%;
+        }
+        .txt-nas{
+            margin-bottom: 15px;
+            font-size: 30px;
+            letter-spacing: 3px;
+            @include large-tablet(){
+                font-size: 25px;
+            }
+            @include tablet(){
+                font-size: 20px;
+            }
+            @include tablet(){
+                font-size: 10px;
+            }
+        }    
+        .txt-nova, .txt-stara{
+            margin-bottom: 15px;
+            @include large-tablet(){
+                font-size: 12px;
+            }
+            @include tablet(){
+                font-size: 10px;
+            }
+            @include phone(){
+                font-size: 8px;
+            }
+        }   
+        .txt-stara{
+            text-decoration: line-through;
+            @include large-tablet(){
+                font-size: 12px;
+            }
+            @include tablet(){
+                font-size: 10px;
+            }
+        } 
+        .txt-opis{
+            font-family: 'Popins', sans-serif;
+            @include large-tablet(){
+                font-size: 12px;
+            }
+            @include tablet(){
+                font-size: 10px;
+            }
+        }
+        .dugmePop{
+        width: 100%;
+        height: 10%;
+        background-color: #c2c2c2;
+        border: none;
+        color: #000000;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 3px;
+        font-size: 25px;
+        margin-top: 15%;
+        cursor: pointer;
+        @include tablet(){
+            font-size: 10px;
+        }
+        }   
+    }
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    background-color: #c2c2c2;
+    opacity: 0.4;
+    position: fixed;
+    display: none;
+    z-index: 150;
+}
+.korpa{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: 70%;
+    top:0%;
+    position: fixed;
+    z-index: 150;
+    @include large-tablet(){
+        width: 45%;
+        left: 55%;
+    }
+    @include phone(){
+        width: 70%;
+        left: 30%;
+    }
+    .korpaTop{
+        width: 100%;
+        height: 95px;
+        background-color: #ffffff;
+        display: flex;
+        //text-align: center;
+        .ix{
+            width: 5%;
+            height: auto;
+            float: left;
+            font-size: 22px;
+            margin-top: 33px;
+            margin-left: 5%;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .ix:hover{
+            color: #c2c2c2;
+        }
+        .korpah3{
+            width: 90%;
+            height: auto;
+            text-align: center;
+            margin-top: 33px;
+            font-size: 22px;
+            font-family: 'Popins', sans-serif;
+            letter-spacing: 3px;
+        }
+        #subtotal{
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+    .korpaSadrzaj{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(15, 15, 15);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        .korpaSadrzaj-center{
+            width: 90%;
+            height: 80%;
+            //background-color: blue;
+            margin: 0px auto;
+            overflow-y: scroll;
+            .praznaKorpa{
+                width: 100%;
+                height: auto;
+                color: #ffffff;
+                font-family: 'Popins', sans-serif;
+                font-size: 20px;
+                text-align: center;
+            }
+            .torba{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                // background-color: red;
+                font-family: 'Popins', sans-serif;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding: 5px;
+                .slika{
+                    //width: 40%;
+                    height: 100%;
+                    // background-color: pink;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .tekst{
+                    width: 60%;
+                    height: 50%;
+                    font-size: 19px;
+                    color: #ffffff;
+                    .naslov
+                    {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        .torbaNasl{
+                            width: 90%;
+                            margin-top: 5px;
+                            margin-bottom: 5%;
+                            font-size: 12px;
+                        }
+                        i{
+                            font-size: 12px;
+                            margin-top: 10px;
+                            //font-family: 'Popins', sans-serif;
+                            display: none;
+                            transition: 0.2s;
+                            cursor: pointer;
+                        }
+                    }
+                    .naslov:hover{
+                        i{
+                            display: block;
+                        }
+                    }
+                    .kolicina{
+                        font-size: 10px;
+                        width: 100%;
+                    }
+                    .kolicina, .cenaN{
+                        font-size: 15px;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+                }
+                
+            }
+            
+        }
+        .cena{
+            width: 80%;
+            height: 50px;
+            background-color: #c2c2c2;
+            z-index: 155;
+            color: #000000;
+            text-align: center;
+            font-size: 25px;
+            margin: 0px auto;
+            font-family: 'Popins', sans-serif;
+            h3{
+                line-height: 25px;
+                font-size: 20px;
+            }
+        }
+    }  
+}
+.author{
+    height: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    .autor-center{
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px auto;
+        padding: 30px;
+        @include tablet(){
+            display: block;
+        }
+        .content{
+            width: 50%;
+            height: auto;
+            
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            @include tablet(){
+                width: 100%;
+            }
+            .author-p{
+                font-family: 'Anton', sans-serif;
+                font-size: 35px;
+                letter-spacing: 3px;
+                padding-bottom: 70px;
+                @include laptop(){
+                    font-size: 30px;
+                }
+                @include tablet(){
+                    width: 100%;
+                }
+            }
+            img{
+                width: 80%;
+                margin: 0px auto;
+                @include tablet(){
+                   height: 50%;
+                }
+            }
+           .author-txt{
+                font-size:20px;
+                font-family: 'Popins', sans-serif;
+                width: 70%;
+                margin: 0px auto;
+                line-height: 35px;
+                font-size: 15px;
+                @include laptop(){
+                    line-height: 22px;
+                }
+                @include tablet(){
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

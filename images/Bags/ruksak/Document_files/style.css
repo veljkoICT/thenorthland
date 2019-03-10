@@ -1,0 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#main #header {
+  width: 100%;
+  height: 750px;
+  background-image: url(../images/Cover/cover.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+#main #header #nav {
+  width: 100%;
+  height: 95px;
+  background-color: rgba(15, 15, 15, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+}
+
+#main #header #nav .nav-logo {
+  width: 30%;
+  height: 80%;
+  margin-top: 10px;
+}
+
+#main #header #nav .nav-logo .center-logo {
+  width: 70%;
+  margin: 8px auto;
+  cursor: pointer;
+}
+
+#main #header #nav .nav-logo .center-logo .logo1 {
+  color: #c2c2c2;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+  margin-right: 1px;
+}
+
+#main #header #nav .nav-logo .center-logo .logo2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+#main #header #nav .nav-list {
+  width: 50%;
+  height: 80%;
+  margin-top: 10px;
+  margin-right: 5%;
+}
+
+#main #header #nav .nav-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+#main #header #nav .nav-list .list li {
+  margin-top: 20px;
+}
+
+#main #header #nav .nav-list .list li a {
+  text-decoration: none;
+  color: #c2c2c2;
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
+
+#main #header #nav .nav-list .list li a:hover {
+  color: #ffffff;
+}
+
+#main #header #nav .nav-list .list .hide ul {
+  background-color: rgba(15, 15, 15, 0.75);
+  text-align: center;
+  padding: 15px;
+}
+
+#main #header #nav .nav-list .list .hide ul li {
+  list-style-type: none;
+}
+
+#main #header .header-txt {
+  width: 70%;
+  height: 200px;
+  margin: 0px auto;
+  position: relative;
+  top: 40%;
+}
+
+#main #header .header-txt .header-h1 {
+  width: 98%;
+  height: auto;
+  margin: 0px auto;
+}
+
+#main #header .header-txt .header-h1 h1 {
+  color: #ffff;
+  font-size: 70px;
+  font-family: 'Cairo', sans-serif;
+  width: 99%;
+  margin: 20px aut0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#main #header .header-txt .shop-txt {
+  width: 20%;
+  height: auto;
+  padding-top: 15px;
+  color: #ffff;
+  margin: 3% auto;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+}
+
+#main #header .header-txt .shop-txt h2 {
+  font-size: 30px;
+}
+
+#main #header .header-txt .shop-txt p {
+  font-size: 80px;
+}
+
+#main #header .header-media {
+  width: 6%;
+  height: auto;
+  background-color: rgba(15, 15, 15, 0.75);
+  position: relative;
+  left: 94%;
+  top: 10%;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+#main #header .header-media ul li {
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

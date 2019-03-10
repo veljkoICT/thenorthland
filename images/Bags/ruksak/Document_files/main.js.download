@@ -1,0 +1,12 @@
+window.onload = function(){
+    $("#ok .hide ul").hide();
+    $("#ok").hover(
+        function() {
+            $("#ok .hide ul").find().slideDown('medium');
+        },
+        function() {
+            $("#ok .hide ul").find().slideUp('medium');
+        }
+    );
+   // console.log( $(".list .hide ul"));
+}
