@@ -266,9 +266,9 @@ function topProducts(){
 
     var niz2 = [
         
-        "Sitemap",
-        "Robots",
-        "Doc"
+        "<a href='sitemap.xml'>Sitemap</a>",
+        "<a href='robots.txt'>Robots</a>",
+        "<a href='dokumentacija.pdf'>Doc</a>"
     ];
     ispis += " <ul class='topProductsUl2'>";
     for(let i of niz2){
